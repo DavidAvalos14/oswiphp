@@ -1,0 +1,96 @@
+/*ESTILOS*/
+
+/*GLOBALES*/
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --primario: #665924;
+    --secundario: #ffde59;
+    --gris: #757575;
+}
+
+html { 
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para box model */
+    scroll-snap-type: y mandatory;    
+}
+/*Globales*/
+
+/*CUERPO*/
+.fondo {
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*cuerpo*/
+
+/*TITULO*/
+.titulo{
+    font-size: 6rem;
+    margin: 2rem auto;
+}
+/*Titulo*/
+
+/*BARRA DE NAVEGACIÓN*/
+.nav-bar {
+    background-color: var(--secundario);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.nav-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 940px) { 
+    .nav-principal {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.nav-principal a {
+    display: block;
+    text-align: center;
+    background-color: var(--primario);
+    color: var(--secundario);
+    /*stroke: var(--negro);*/
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+.nav-principal a:hover, .nav-principal svg:hover {
+    background-color: var(--negro);
+    color: var(--primario);
+    stroke: var(--primario);
+}
+/*Barra de Navegación*/
+
+/*CONTACTOS*/
+.contacto{
+    font-size: 2.5rem;
+    margin: 1rem auto;
+}
+
+.contacto span{
+    color: var(--secundario);
+}
+
+.contacto a{
+    text-decoration: none;
+    color: var(--secundario);
+}
+/*Contactos*/
+
+/*PARRAFO*/
+p{
+    font-size: 1.5rem;
+}
+/*Parrafo*/

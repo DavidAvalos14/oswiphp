@@ -1,0 +1,148 @@
+/*ESTILOS*/
+
+/*GLOBALES*/
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --primario: #665924;
+    --secundario: #ffde59;
+    --gris: #c3c3c3;
+}
+
+html {  
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para box model */
+    scroll-snap-type: y mandatory;
+    color: var(--blanco);
+    background-color: var(--negro);
+    text-align: center;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/*Globales*/
+
+/*CUERPO*/
+.fondo {
+    background-color: var(--negro);
+    text-align: center;
+}
+/*cuerpo*/
+
+/*TÍTULO*/
+.subtitulo {    
+    text-align: center;
+    font-size: 4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    text-transform: uppercase;    
+    margin-bottom: 0rem;
+}
+/*Título*/
+
+
+/*BARRA DE NAVEGACIÓN*/
+.nav-bar {
+    background-color: var(--secundario);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.nav-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 940px) { 
+    .nav-principal {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.nav-principal a {
+    display: block;
+    text-align: center;
+    background-color: var(--primario);
+    color: var(--secundario);
+    /*stroke: var(--negro);*/
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+.nav-principal a:hover, .nav-principal svg:hover {
+    background-color: var(--negro);
+    color: var(--primario);
+    stroke: var(--primario);
+}
+/*Barra de Navegación*/
+
+/*PRODUCTO*/
+.producto{
+    font-size: 2.2rem;    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.tituloP{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--secundario);
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    padding-top: 5rem;
+}
+
+.precioP{
+    color: var(--gris);
+    font-weight: bold;
+}
+
+.contenedorP{
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: var(--primario);
+    border-radius: 2rem;
+}
+
+.botonP{
+    display:inline-block;    
+    background-color: var(--secundario);
+    color: var(--primario);
+    /*stroke: var(--negro);*/
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-size: 2rem; */
+    /* font-weight: 700; */
+    padding: 1rem 2rem;    
+    /* margin: 1rem; */
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.imgP {
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+}
+/*Producto*/
+
+/*FOOTER*/
+footer{
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Footer*/

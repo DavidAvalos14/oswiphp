@@ -1,0 +1,63 @@
+/*ESTILOS*/
+
+/*GLOBALES*/
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --primario: #665924;
+    --secundario: #59ffac;
+    --gris: #757575;
+} 
+
+html { 
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para box model */
+    scroll-snap-type: y mandatory;
+    color: var(--blanco);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/*Globales*/
+
+/*BARRA DE NAVEGACIÓN*/
+.nav-bar {
+    background-color: var(--secundario);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.nav-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 940px) { 
+    .nav-principal {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.nav-principal a {
+    display: block;
+    text-align: center;
+    background-color: var(--primario);
+    color: var(--secundario);
+    /*stroke: var(--negro);*/
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+.nav-principal a:hover, .nav-principal svg:hover {
+    background-color: var(--negro);
+    color: var(--primario);
+    stroke: var(--primario);
+}
+/*Barra de Navegación*/

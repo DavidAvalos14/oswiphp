@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSWI - Administrador</title>
+    <link rel="icon" href="../img/OSWI-icono.png" type="image/png">
+    <link rel="preload" href="../CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="preload" href="../CSS/styleLogin.css" as="style">
+    <link href="../CSS/styleLogin.css" rel="stylesheet">
+</head>
+<body class="fondo">
+    
+    <form class="formulario" action="admin.php" method="post">
+        <fieldset>
+            <legend>Nueva Marca</legend>
+            <label>Nombre de la Marca: </label>
+            <br>
+            <input type="hidden" name="formulario" value="formMarca">
+            <br>
+            <input class="input-text" type="text" placeholder="Nombre" name="marca" id="marca">
+            <br>
+            <div class="derecha flex"><input class="boton w-sm-100" name="accion" type="submit" value="Dar de Baja">&nbsp;&nbsp;&nbsp;<input class="boton w-sm-100" name="accion" type="submit" value="Dar de Alta"></div>
+        </fieldset>
+    </form>
+
+<br><br>
+
+    <form class="formulario" action="admin.php" method="post">
+        <fieldset>
+            <legend>Nuevo Modelo</legend>
+            <label>Nombre de la Marca: </label>
+            <br>
+            <input type="hidden" name="formulario" value="formModelo">
+            <br>
+            <input class="input-text" type="text" placeholder="Marca" name="marcaClave" id="marcaClave">
+            <br>
+            <label>Nombre del Modelo: </label>
+            <br>
+            <input class="input-text" type="text" placeholder="Nombre" name="modelo" id="modelo">
+            <br>
+            <div class="derecha flex"><input class="boton w-sm-100" name="accion" type="submit" value="Dar de Baja">&nbsp;&nbsp;&nbsp;<input class="boton w-sm-100" name="accion" type="submit" value="Dar de Alta"></div>
+        </fieldset>
+    </form>
+
+<br><br>
+
+    <form class="formulario" action="admin.php" method="post">
+        <fieldset>
+            <legend>Nuevo Producto</legend>
+            <label>Nombre de la Marca: </label>
+            <br>
+            <input type="hidden" name="formulario" value="formProducto">
+            <br>
+            <input class="input-text" type="text" placeholder="Marca" name="marcaProd" id="marcaProd">
+            <br>
+            <label>Nombre del Modelo: </label>
+            <br>
+            <input class="input-text" type="text" placeholder="Modelo" name="modeloProd" id="modeloProd">
+            <br>
+            <label>Precio: </label>
+            <br>
+            <input class="input-text" type="number" placeholder="Precio" name="precio" id="precio">
+            <br>
+            <label>Color: </label>
+            <br>
+            <input class="input-text" type="text" placeholder="Color" name="color" id="color">
+            <br>
+            <label>Talla: </label>
+            <br>
+            <input class="input-text" type="number" placeholder="Talla" name="talla" id="talla">
+            <br>
+            <label>Imagen: </label>
+            <br>
+            <input class="input-text" type="text" placeholder="Ruta de la imagen" name="imagen" id="imagen">
+            <br>
+            <div class="derecha flex"><input class="boton w-sm-100" name="accion" type="submit" value="Dar de Baja">&nbsp;&nbsp;&nbsp;<input class="boton w-sm-100" name="accion" type="submit" value="Dar de Alta"></div>
+        </fieldset>
+    </form>
+<br><br>
+<form class="formulario" action="admin.php" method="post">
+    <fieldset>
+        <legend>Modificaciones</legend>
+        <input type="hidden" name="formulario" value="formModificaciones">
+        <br>
+        <label>Marca:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Marca" name="modMarca" id="modMarca">
+        <br>
+        <label>Nueva Marca:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Nueva Marca" name="modMarcaNueva" id="modMarcaNueva">
+        <br>
+        <label>Modelo:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Modelo" name="modModelo" id="modModelo">
+        <br>
+        <label>Nuevo Modelo:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Nuevo Modelo" name="modModeloNuevo" id="modModeloNuevo">
+        <br>
+        <label>ID:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="ID a modificar" name="id" id="id">
+        <br>
+        <label>Nuevo Precio:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Precio Nuevo" name="modPrecioNuevo" id="modPrecioNuevo">
+        <br>
+        <label>Nuevo Color:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Nuevo Color" name="modColorNuevo" id="modColorNuevo">
+        <br>
+        <label>Nueva Talla:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Nueva Talla" name="modTallaNueva" id="modTallaNueva">
+        <br>
+        <label>Nueva Imagen:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Nueva Imagen" name="modImagenNueva" id="modImagenNueva">
+        <br>
+        <div class="derecha flex"><input class="boton w-sm-100" name="accion" type="submit" value="Marca">&nbsp;&nbsp;&nbsp;<input class="boton w-sm-100" name="accion" type="submit" value="Modelo">&nbsp;&nbsp;&nbsp;<input class="boton w-sm-100" name="accion" type="submit" value="Tenis"></div>
+    </fieldset>
+</form>
+<footer>
+    <p>David Avalos | Alfredo Puentes <br> Todos los derechos reservados</p>    
+</footer> 
